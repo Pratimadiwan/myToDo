@@ -10,6 +10,7 @@
     display: none;
 }
 
+
 body {
     display: flex;
     justify-content: center;
@@ -26,13 +27,15 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 100px 400px;
-    width: 500px;
+    margin: 20px; 
+    width: 100%;
+    max-width: 500px; 
     background-color: rgba(119, 116, 116, 0.5);
     border-radius: 20px;
     padding: 20px;
     box-shadow: 0 0 10px 0 rgba(17, 14, 14, 0.1);
 }
+
 
 .container header {
     display: flex;
@@ -116,7 +119,7 @@ header .input-section {
     align-items: center;
     min-height: 100%;
     max-height: 40vh;
-    overflow-y: auto;
+    overflow-y: auto; 
     width: 100%;
 }
 
@@ -251,7 +254,7 @@ header .input-section {
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+
 }
 
 .dropdown-content a {
@@ -273,11 +276,25 @@ header .input-section {
     background-color: rgb(241, 241, 243);
     color: rgb(240, 109, 22);
 }
-
-@media only screen and (max-width: 530px) {
+ 
+@media screen and (max-width: 468px) {
     .container {
-        margin: 0 20px;
-        max-width: 96%;
-        min-width: 96%;
+        margin: 20px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+     #delete-all {
+        font-size: 10px;
+    }
+    #delete-selected {
+        font-size: 12px;
+    }
+    .btn, .dropbtn {
+        font-size: 14px;
+        padding: 8px 12px;
     }
 }
